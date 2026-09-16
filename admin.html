@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Admin | Utkarsh Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="bg-grid"></div>
+<header class="site-header"><a class="brand" href="index.html"><span>&lt;</span>UTKARSH<span>/&gt;</span></a><a class="btn ghost" href="index.html">View Portfolio</a></header>
+<main class="section-pad admin-wrap">
+  <div id="loginBox" class="glass admin-card"><p class="eyebrow">PRIVATE AREA</p><h1>Admin Panel</h1><p class="section-note">Enter your admin password to manage this browser's portfolio data.</p><form id="loginForm"><input id="password" type="password" placeholder="Admin password" autocomplete="current-password" required><button class="btn primary" type="submit">Login</button><p id="loginMsg"></p></form></div>
+  <div id="panel" class="hidden">
+    <div class="section-heading"><span>ADMIN</span><h2>Portfolio Control Center</h2></div>
+    <div class="admin-grid">
+      <section class="glass"><h3>Add Achievement</h3><form id="achievementForm" class="form"><input id="aTitle" required placeholder="Achievement title"><input id="aDate" placeholder="Event / Date"><textarea id="aDesc" required placeholder="Description"></textarea><button class="btn primary">Add Achievement</button></form></section>
+      <section class="glass"><h3>Add Project</h3><form id="projectForm" class="form"><input id="pTitle" required placeholder="Project title"><input id="pTag" placeholder="Category / tags"><textarea id="pDesc" required placeholder="Project description"></textarea><input id="pTech" placeholder="Technology used"><button class="btn primary">Add Project</button></form></section>
+      <section class="glass"><h3>Add Certificate</h3><form id="certificateForm" class="form"><input id="cTitle" required placeholder="Certificate title"><input id="cDate" placeholder="Issuer / Date"><textarea id="cDesc" required placeholder="Description"></textarea><button class="btn primary">Add Certificate</button></form></section>
+      <section class="glass"><h3>Data Management</h3><p class="section-note">This starter version stores updates in this browser using localStorage.</p><button class="btn ghost" id="exportBtn">Export Portfolio Data</button> <button class="btn ghost" id="resetBtn">Reset Demo Data</button><p id="status"></p></section>
+    </div>
+    <div class="glass" style="margin-top:20px"><h3>Current entries</h3><div id="adminList"></div></div>
+  </div>
+</main><footer><span>Admin area</span><a href="index.html">Back to portfolio</a></footer>
+<script src="admin.js"></script></body></html>
